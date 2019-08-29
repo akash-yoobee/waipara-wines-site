@@ -1,0 +1,24 @@
+{
+  "name": "waipara-wines-site",
+  "version": "1.0.0",
+  "description": "This project will be submitted as Formative 1.2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash-yoobee/waipara-wines-site.git"
+  },
+  "keywords": [
+    "waipara",
+    "wines",
+    "formative1.2"
+  ],
+  "author": "Akash Sanyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash-yoobee/sass-hello-world/issues"
+  },
+  "homepage": "https://github.com/akash-yoobee/sass-hello-world#readme"
+}
