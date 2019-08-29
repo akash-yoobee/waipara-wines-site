@@ -50,8 +50,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    background: #ffeec6;
     margin-bottom: 2rem;
+  }
+
+  .vineyard-card {
+    margin-bottom: 2rem;
+  }
+  
+    h3 {
+    color: #D04D5A;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   .card h3 {
@@ -59,12 +68,8 @@
     margin-bottom: 2rem;
   }
   
-  .card img {
-    height: 400px;
-  }
-  
   .card > div {
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
   }
   
   .card:nth-child(odd) img {
@@ -90,7 +95,8 @@
   }
   
   .link:hover {
-    opacity: 0.8;
+    font-size: 1.2rem;
+    color: #9c3b44;
   }
   
   @media(max-width:768px) {
