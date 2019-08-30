@@ -10,11 +10,6 @@ body {
   background: #ffeec6;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 .container {
   max-width: 1200px;
   margin: auto;
@@ -55,7 +50,6 @@ h2 {
 }
   h3 {
   color: #D04D5A;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -72,6 +66,10 @@ h2 {
   order: 2;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   display: inline-block;
   background: #D04D5A;
@@ -82,7 +80,7 @@ h2 {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .link {
@@ -91,8 +89,7 @@ h2 {
 }
 
 .link:hover {
-  font-size: 1.2rem;
-  color: #9c3b44;
+  color: #70333a;
 }
 
 @media(max-width:768px) {
@@ -102,9 +99,6 @@ h2 {
 }
 
 // Navbar code
-:root {
-  --background: rgba(255, 238, 198, .90);
-}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -113,7 +107,7 @@ h2 {
 /* navigation styles start here */
 
 header {
-  background: var(--background);
+  background: rgba(255, 238, 198, .90);
   text-align: center;
   position: fixed;
   z-index: 999;
@@ -166,7 +160,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--background);
+  background: rgba(255, 238, 198, .90);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
