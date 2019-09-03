@@ -20,7 +20,8 @@ body {
 
 .site-info {
   height: 35vh;
-  padding: 2rem;
+  padding: 2rem 0rem;
+  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,40 +36,32 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 1.8rem;
-}
-
-img {
-  width: 100%;
-}
-
-.card {
-  display: block;
 }
 
 .vineyard-card {
   margin-bottom: 2rem;
 }
 
-h2 {
-  color: #D04D5A;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.vineyard-card img {
+  width: 100%;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
-h3 {
+.vineyard-card h3 {
   color: #D04D5A;
-  margin-bottom: 1rem;
+}
+
+.card {
+  display: block;
+}
+
+.card img {
+  width: 100%;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .card h3 {
   color: #D04D5A;
-  margin-bottom: 2rem;
-}
-
-.card > div {
-  padding: 0rem 0rem 2rem 0rem;
 }
 
 .card:nth-child(odd) img {
@@ -103,6 +96,16 @@ a {
   color: #70333a;
 }
 
+footer {
+  color: #70333a;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+footer .link:hover {
+  color: blue;
+}
+
 header {
   background: #ffeec6;
   text-align: center;
@@ -110,6 +113,12 @@ header {
   top: 0;
   z-index: 999;
   width: 100%;
+}
+
+.logo {
+  color: #D04D5A;
+  font-size: 1.5rem;
+  margin: 1.5rem 0rem;
 }
 
 .nav-toggle {
@@ -224,14 +233,16 @@ nav a:hover {
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto minmax(570px, 2fr) 1fr;
-        grid-template-columns: 1fr auto minmax(570px, 2fr) 1fr;
+    -ms-grid-columns: 1fr auto minmax(540px, 2fr) 1fr;
+        grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;
   }
   .logo {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
-    color: black;
+    color: #D04D5A;
+    margin: 1.5rem 0rem;
+    font-size: 1.5rem;
   }
   nav {
     position: relative;
