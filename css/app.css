@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12,10 +12,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
-  overflow: auto;
   padding: 0 2rem;
+  position: relative;
 }
 
 .site-info {
@@ -43,12 +43,7 @@ img {
 }
 
 .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  margin-bottom: 2rem;
+  display: block;
 }
 
 .vineyard-card {
@@ -108,30 +103,19 @@ a {
   color: #70333a;
 }
 
-@media (max-width: 768px) {
-  .card {
-    display: block;
-  }
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* navigation styles start here */
 header {
-  background: rgba(255, 238, 198, 0.9);
+  background: #ffeec6;
   text-align: center;
   position: fixed;
+  top: 0;
   z-index: 999;
   width: 100%;
 }
 
 .nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .nav-toggle-label {
@@ -178,7 +162,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: rgba(255, 238, 198, 0.9);
+  background: #ffeec6;
   width: 100%;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
@@ -227,19 +211,27 @@ nav a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
   .nav-toggle-label {
     display: none;
   }
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    -ms-grid-columns: 1fr auto minmax(570px, 2fr) 1fr;
+        grid-template-columns: 1fr auto minmax(570px, 2fr) 1fr;
   }
   .logo {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    color: black;
   }
   nav {
     position: relative;
