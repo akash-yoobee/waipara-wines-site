@@ -29,16 +29,19 @@ body {
 }
 
 .vineyard-card {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .vineyard-card img {
   width: 100%;
-  padding: 0rem 0rem 1rem 0rem;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
 .vineyard-card h3 {
   color: #D04D5A;
+  margin-bottom: 0.5rem;
 }
 
 .card {
@@ -47,11 +50,19 @@ body {
 
 .card img {
   width: 100%;
-  padding: 0rem 0rem 1rem 0rem;
+  height: auto;
+  object-fit: cover;
 }
 
 .card h3 {
   color: #D04D5A;
+  margin-bottom: 0.5rem;
+}
+
+.anchor-link::after{
+  content: " \f0c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 .card:nth-child(odd) img {
@@ -67,7 +78,7 @@ a {
   background: #D04D5A;
   color: #fff;
   padding: 0.8rem 1.8rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   cursor: pointer;
 }
 
@@ -91,10 +102,11 @@ footer {
 }
 
 footer .link:hover {
-  color: blue;
+  color:  #9e1122;
 }
 // Navbar code
 
+// This header applies to both the mobile and the desktop versions
 header {
   background: #ffeec6;
   text-align: center;
@@ -104,6 +116,7 @@ header {
   width: 100%;
 }
 
+// Code for the mobile version
 .logo {
   color: #D04D5A;
   font-size: 1.5rem;
@@ -196,6 +209,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+// Code for the desktop version
 @media screen and (min-width: 768px) {
   // code for the body of the webpage in desktop mode
   .card {
