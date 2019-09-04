@@ -17,6 +17,8 @@
 ​
 <body class="body">
 
+  <!-- Attribution - The navbar inside this header is based on a Youtube tutorial by Kevin Powell published on 16 May 2018
+https://www.youtube.com/watch?v=8QKOaTYvYUA -->
 <header>
     <h2 class="logo">Waipara Wines</h2>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -42,9 +44,9 @@
 </section>
 ​
 <section class="vineyard-info-card">
-  <img src="/images/image-home-vineyard.jpeg" alt="Waipara Wines' home vineyard" />
+  <img class="vineyard-info-card__img" src="/images/image-home-vineyard.jpeg" alt="Waipara Wines' home vineyard" />
   <div>
-    <h3>Our home vineyard</h3>
+    <h3 class="vineyard-info-card__h3">Our home vineyard</h3>
     <p>
       Our home vineyard is located six kilometres north east of the Waipara Junction in the Omihi subdistrict of Waipara Valley. <br>
       It has a northfacing slope and is situated on a sedimentary clay fan on a gentle hillside. The soil is mainly Awapuni clay loam with calcium carbonate deposits. <br>
@@ -55,9 +57,9 @@
 </section>
 ​
 <section class="vineyard-info-card">
-  <img src="/images/image-damsteep-vineyard.jpg" alt="Damsteep vineyard" />
+  <img class="vineyard-info-card__img" src="/images/image-damsteep-vineyard.jpg" alt="Damsteep vineyard" />
   <div>
-    <h3>Damsteep vineyard</h3>
+    <h3 class="vineyard-info-card__h3">Damsteep vineyard</h3>
     <p>
       Damsteep vineyard is located in the north east of Waipara Valley at the foot of the Omihi Saddle, ten kilometres north of our home vineyard. <br>
       <em>Pinot Noir</em> is grown here on a 5 hectare north east facing slope, with an altitude between 140 to 180 meters above the sea level. <br>
@@ -68,9 +70,9 @@
 </section>
 ​
 <section class="vineyard-info-card">
-  <img src="/images/image-netherwood-vineyard.jpeg" alt="Netherwood vineyard" />
+  <img class="vineyard-info-card__img" src="/images/image-netherwood-vineyard.jpeg" alt="Netherwood vineyard" />
   <div>
-    <h3>Netherwood vineyard</h3>
+    <h3 class="vineyard-info-card__h3">Netherwood vineyard</h3>
     <p>
         The Netherwood vineyard was planted by Waipara wine pioneers Russell Black and Daniel Schuster in 1986. The soil is Waipara Greensand which is a green grey richly glauconitic sandstone. <br>
         <em>Pinot Noir</em> cuttings were planted here on their own roots and established and farmed without irrigation. <br>
@@ -80,10 +82,10 @@
   </div>
 </section>
 ​
-<section class="card" data-aos="fade-right"> 
+<section class="card" data-aos="fade-right">
 
   <div> 
-    <h3>Our wines</h3> 
+    <h3 class="card__h3">Our wines</h3> 
     <p> 
       We are set on making our wines true to the place they grow.  
       The wine is made from simple good estate grown fruit, it is handpicked, 
@@ -98,11 +100,11 @@
   </div>
 
   <div>
-    <img src="/images/image-our-wines.jpg" alt="A selection of the vineyard's wines" /> 
+    <img class="card__img" src="/images/image-our-wines.jpg" alt="A selection of the vineyard's wines" /> 
   </div> 
 
   <div> 
-    <h3 class="anchor-link">Current releases</h3> 
+    <h3 class="card__h3 card__h3--anchor-link"><a class="card__link">Current releases</a></h3> 
       <p> 
         Damsteep Riesling 2018 <br> 
         Home Young Vines Chardonnay 2018 <br> 
@@ -112,7 +114,7 @@
         Netherwood Pinot Noir 2016 <br> 
       </p> 
         <br> 
-    <h3 class="anchor-link">Specials</h3> 
+    <h3 class="card__h3 card__h3--anchor-link"><a class="card__link">Specials</a></h3> 
       <p> 
         Library Stock Pinot Noir Pack <br> 
         Current Pinot Noirs Pack <br> 
@@ -120,7 +122,7 @@
   </div> 
 
   <div> 
-    <h3 class="anchor-link">Our complete collection</h3> 
+    <h3 class="card__h3 card__h3--anchor-link"><a class="card__link">Our complete collection</a></h3> 
       <p> 
         Chardonnay <br> 
         Chenin Blanc <br> 
@@ -130,7 +132,7 @@
         Rose <br> 
       </p>
         <br>
-    <h3 class="anchor-link">Annual library</h3> 
+    <h3 class="card__h3 card__h3--anchor-link"><a class="card__link">Annual library</a></h3> 
       <p> 
         2018 
         2017 
@@ -154,25 +156,25 @@
 <section class="card" data-aos="fade-left">
 
   <div>
-    <img src="/images/image-our-cuisine.jpg" alt="A selection of the restaurant's cuisine" />
+    <img class="card__img" src="/images/image-our-cuisine.jpg" alt="A selection of the restaurant's cuisine" />
   </div>
 
   <div>
-    <h3>Our cuisine</h3>
+    <h3 class="card__h3">Our cuisine</h3>
       <p>
         Our cellar door and restaurant is open <br>
         Wednesday to Sunday 10am to 5pm
         <br>
         +64 3 314 6085
         <br>
-        <a href="mailto:bookings@blackestate.co.nz" class="link">email</a>
+        <a href="mailto:bookings@blackestate.co.nz" class="card__link">email</a>
         <br>
-        <a href="https://maps.google.com/maps?saddr=&daddr=614+Omihi+Road,+Waipara,+New+Zealand" target="_blank" class="link">map</a>
+        <a href="https://maps.google.com/maps?saddr=&daddr=614+Omihi+Road,+Waipara,+New+Zealand" target="_blank" class="card__link">map</a>
         <br>
-        We have two hats with <a href="https://www.cuisine.co.nz/black-estate/" target="_blank" class="link">Cuisine Good Food Awards</a>. See what they have to offer in our <br>
-        <a href="/files/lunch-menu.pdf" target="_blank" class="link">lunch & drinks menu</a> 
+        We have two hats with <a href="https://www.cuisine.co.nz/black-estate/" target="_blank" class="card__link">Cuisine Good Food Awards</a>. See what they have to offer in our <br>
+        <a href="/files/lunch-menu.pdf" target="_blank" class="card__link">lunch & drinks menu</a> 
         <br>
-        <a href="#" class="btn">Book a Table</a>
+        <a href="#" class="card__button">Book a Table</a>
       </p>
   </div>
 
@@ -181,17 +183,17 @@
 <section class="card" data-aos="fade-right">
 
   <div>
-    <h3>Stay at our bed & breakfast</h3>
+    <h3 class="card__h3">Stay at our bed & breakfast</h3>
     <p>
       Located on the ground floor of an architecturally designed building which also houses 
       a lunch time restaurant (Cuisine Winery Restaurant of the Year 2017) at the opposite end.
       The views are vast, expanding from vineyards to the majestic Southern Alps. <br>
     </p>
-    <a href="#" class="btn">Book Now</a>
+    <a href="#" class="card__button">Book Now</a>
   </div>
 
   <div>
-      <img src="/images/image-bed-breakfast.jpeg" alt="Waipara Wine's bed and breakfast inn" />
+      <img class="card__img" src="/images/image-bed-breakfast.jpeg" alt="Waipara Wine's bed and breakfast inn" />
   </div>
 
 </section>
@@ -199,24 +201,24 @@
 <section class="card" data-aos="fade-left">
 
   <div>
-    <img src="/images/image-kumikos-guesthouse.jpg" alt="Kumiko's guesthouse" />
+    <img class="card__img" src="/images/image-kumikos-guesthouse.jpg" alt="Kumiko's guesthouse" />
   </div>
 
   <div>
-    <h3>Stay at Kumiko’s guest house</h3>
+    <h3 class="card__h3">Stay at Kumiko’s guest house</h3>
     <p>
       This guesthouse was built in 1995 by Waipara wine pioneer Russell Black for his wife Kumiko. 
       It comprises many of the elements found in the architecture of traditional Japan and gardens 
       that reflect the dramatic views of the shifting North Canterbury skies.
       The house caters to families, small groups and special occasions.
     </p>
-    <a href="#" class="btn">Book Now</a>
+    <a href="#" class="card__button">Book Now</a>
   </div>
 
   </section>
 ​
-<footer>
-  If you would like to hire our venue for a special  function call us on +64 3 314 6085  or <a href="mailto:bookings@blackestate.co.nz" class="link">email</a> us.
+<footer class="footer">
+  If you would like to hire our venue for a special  function call us on +64 3 314 6085  or <a href="mailto:bookings@blackestate.co.nz" class="footer__link">email</a> us.
 </footer>
   
 </main>

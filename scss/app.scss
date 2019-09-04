@@ -17,6 +17,8 @@
   position: relative;
 }
 
+// Code for the body of the mobile version
+// I have applied BEM naming convention to this
 .site-info-card {
   height: 35vh;
   padding: 2rem 0rem;
@@ -32,14 +34,14 @@
   margin-bottom: 0.5rem;
 }
 
-.vineyard-info-card img {
+.vineyard-info-card__img {
   width: 100%;
   height: auto;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
 
-.vineyard-info-card h3 {
+.vineyard-info-card__h3 {
   color: #D04D5A;
   margin-bottom: 0.5rem;
 }
@@ -48,65 +50,75 @@
   display: block;
 }
 
-.card img {
+.card__img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.card h3 {
+.card__h3 {
   color: #D04D5A;
   margin-bottom: 0.5rem;
 }
 
-.anchor-link::after{
+.card__h3--anchor-link::after{
   content: " \f0c1";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.card:nth-child(odd) img {
-  order: 2;
-}
-
-a {
+.card__link {
+  color: #D04D5A;
   text-decoration: none;
 }
 
-.btn {
+.card__link:hover {
+  color: #70333a;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card__button {
   display: inline-block;
   background: #D04D5A;
   color: #fff;
   padding: 0.8rem 1.8rem;
   margin-top: 1.5rem;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn:hover {
+.card__button:hover {
   opacity: 0.6;
-}
-
-.link {
-  color: #D04D5A;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.link:hover {
-  color: #70333a;
-}
-
-footer {
-  color: #70333a;
+.footer {
+  color: #D04D5A;
   font-size: 1.1rem;
   text-align: center;
 }
 
-footer .link:hover {
-  color:  #9e1122;
+.footer__link {
+  font-weight: bold;
+  color: #D04D5A;
+  text-decoration: none;
+  cursor: pointer;
 }
-// Navbar code
 
-// This header applies to both the mobile and the desktop versions
+.footer__link:hover {
+  color: #70333a;
+  text-decoration: none;
+  cursor: pointer;
+}
+// End of code for the body of the mobile version
+
+// Navbar code for the mobile version
+// I have not applied BEM names to it
+// It is based on https://codepen.io/kevinpowell/pen/jxppmr
+// This is my fork of this code with my comments and modifications applied to it
+// https://codepen.io/Akash-Sanyal/pen/PoYKOJy?editors=1100
+
 header {
   background: #ffeec6;
   text-align: center;
@@ -116,7 +128,6 @@ header {
   width: 100%;
 }
 
-// Code for the mobile version
 .logo {
   color: #D04D5A;
   font-size: 1.5rem;
@@ -209,24 +220,42 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-// Code for the desktop version
-// If the width is a minimum of 768px do the following
+// Code for the desktop version is inside this media query
+// I did not have time to put it into _mixins.scss
 @media (min-width: 768px) {
-  // code for the body of the webpage in desktop mode
+  // code for the body of the webpage
+
+  .site-info-card {
+    height: 35vh;
+    padding: 2rem 0rem;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
 
-  // code for the navbar in desktop mode
+  // code for the navbar
   .nav-toggle-label {
     display: none;
   }
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;
+    grid-template-columns: 0.8fr auto minmax(540px, 2fr) 0.8fr;
+    background: #ffeec6;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
   }
   
   .logo {
@@ -280,4 +309,24 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1,1);
   }
+  
+  .footer {
+    color: #D04D5A;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .footer__link {
+    font-weight: bold;
+    color: #D04D5A;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer__link:hover {
+    color: #70333a;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 }

@@ -42,7 +42,7 @@
   margin-bottom: 0.5rem;
 }
 
-.vineyard-info-card img {
+.vineyard-info-card__img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -50,7 +50,7 @@
   margin-bottom: 0.5rem;
 }
 
-.vineyard-info-card h3 {
+.vineyard-info-card__h3 {
   color: #D04D5A;
   margin-bottom: 0.5rem;
 }
@@ -59,64 +59,67 @@
   display: block;
 }
 
-.card img {
+.card__img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.card h3 {
+.card__h3 {
   color: #D04D5A;
   margin-bottom: 0.5rem;
 }
 
-.anchor-link::after {
+.card__h3--anchor-link::after {
   content: " \f0c1";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.card:nth-child(odd) img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-a {
+.card__link {
+  color: #D04D5A;
   text-decoration: none;
 }
 
-.btn {
+.card__link:hover {
+  color: #70333a;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card__button {
   display: inline-block;
   background: #D04D5A;
   color: #fff;
   padding: 0.8rem 1.8rem;
   margin-top: 1.5rem;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn:hover {
+.card__button:hover {
   opacity: 0.6;
-}
-
-.link {
-  color: #D04D5A;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.link:hover {
-  color: #70333a;
-}
-
-footer {
-  color: #70333a;
+.footer {
+  color: #D04D5A;
   font-size: 1.1rem;
   text-align: center;
 }
 
-footer .link:hover {
-  color: #9e1122;
+.footer__link {
+  font-weight: bold;
+  color: #D04D5A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer__link:hover {
+  color: #70333a;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -233,6 +236,25 @@ nav a:hover {
 }
 
 @media (min-width: 768px) {
+  .site-info-card {
+    height: 35vh;
+    padding: 2rem 0rem;
+    font-size: 1.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
   .card {
     display: -ms-grid;
     display: grid;
@@ -246,8 +268,14 @@ nav a:hover {
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto minmax(540px, 2fr) 1fr;
-        grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;
+    -ms-grid-columns: 0.8fr auto minmax(540px, 2fr) 0.8fr;
+        grid-template-columns: 0.8fr auto minmax(540px, 2fr) 0.8fr;
+    background: #ffeec6;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
   }
   .logo {
     -ms-grid-column: 2;
@@ -312,6 +340,22 @@ nav a:hover {
   nav a:hover::before {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+  .footer {
+    color: #D04D5A;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .footer__link {
+    font-weight: bold;
+    color: #D04D5A;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .footer__link:hover {
+    color: #70333a;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=app.css.map */
