@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
+.body {
   font-size: 1.3rem;
   font-family: 'Poppins', sans-serif;
   background: #ffeec6;
@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-.site-info {
+.site-info-card {
   height: 35vh;
   padding: 2rem 0rem;
   font-size: 1.7rem;
@@ -38,11 +38,11 @@ body {
   text-align: center;
 }
 
-.vineyard-card {
+.vineyard-info-card {
   margin-bottom: 0.5rem;
 }
 
-.vineyard-card img {
+.vineyard-info-card img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -50,7 +50,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.vineyard-card h3 {
+.vineyard-info-card h3 {
   color: #D04D5A;
   margin-bottom: 0.5rem;
 }
@@ -232,7 +232,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .card {
     display: -ms-grid;
     display: grid;
